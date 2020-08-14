@@ -5,7 +5,7 @@
 //3 3 5 4 4 4
 //当小Q处于位置3时，他可以向前看到位置2,1处的楼，向后看到位置4,6处的楼，加上第3栋楼，共可看到5栋楼。当小Q处于位置4时，他可以向前看到位置3处的楼，向后看到位置5,6处的楼，加上第4栋楼，共可看到4栋楼
 import java.util.*;
-public class dandiaozhan {
+class dandiaozhan {
     public static void  main(String[] args) {
         int n = 6;
         int nums[] = {5, 3, 8, 3, 2, 5};

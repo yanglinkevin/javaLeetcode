@@ -16,7 +16,7 @@ class Offer56 {
         Hashtable<Integer,Integer> hashtable = new Hashtable<>();
         hashtable.put(1,1);
         hashtable.get(1);
-        ConcurrentHashMap<Integer,Integer> concurrentHashMap = new ConcurrentHashMap<>();\
+        ConcurrentHashMap<Integer,Integer> concurrentHashMap = new ConcurrentHashMap<>();
         concurrentHashMap.put(1,1);
         HashSet<Integer> hashSet = new HashSet<>();
         hashSet.add(1);

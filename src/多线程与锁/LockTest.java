@@ -1,16 +1,21 @@
 package 多线程与锁;
 
+import java.util.ArrayList;
+import java.util.concurrent.Semaphore;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.Condition;
 
 public class LockTest {
     private Lock lock = new ReentrantLock();
+    private Semaphore semaphore = new Semaphore(2);
+
 
     //需要参与同步的方法
-    private void method(Thread thread){
+    private void method(Thread thread) {
         lock.lock();
         try {
+//            System.out.println("this state"+this.lock.getState() + "获得了锁");
             System.out.println("线程名"+thread.getName() + "获得了锁");
         }catch(Exception e){
             e.printStackTrace();
